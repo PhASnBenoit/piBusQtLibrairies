@@ -9,13 +9,15 @@
 
 #define IN  0
 #define OUT 1
+#define SWITCH_ON 1
+#define SWITCH_OFF 0
 
 class CGpio : public QObject
 {
     Q_OBJECT
 
 public :
-    explicit CGpio(int addr, int dir);
+    explicit CGpio(int addr = 4, int dir = OUT);
     ~CGpio();
     int lire();
     int ecrire(int value);

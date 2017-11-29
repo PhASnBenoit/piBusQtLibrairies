@@ -28,6 +28,9 @@ private:
     char mNoCe;   // No du device CE/
     int mSpeed;   // vitesse du bus SPI pour CE0
     int mFileSpi;  // descripteur du fichier Spi
+
+signals:
+    void erreur(QString msg);
 };
 
 #endif // CSPI_H

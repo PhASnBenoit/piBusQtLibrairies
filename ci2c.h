@@ -34,6 +34,9 @@ private:
     int mFileI2c;  // descripteur du fichier i2C
     int mNbLink;
     static CI2c *mSingleton;
+
+signals:
+    void erreur(QString msg);
 };
 
 #endif // CI2C_H
